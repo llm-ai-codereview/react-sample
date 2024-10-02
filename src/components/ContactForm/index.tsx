@@ -58,6 +58,15 @@ const Contact = ({ title, content, id, t }: ContactProps) => {
                 />
                 <ValidationType type="message" />
               </Col>
+              <Col span={24}>
+                <TextArea
+                  placeholder="Your Contact"
+                  value={values.contact || ""}
+                  name="contact"
+                  onChange={handleChange}
+                />
+                <ValidationType type="contact" />
+              </Col>
               <ButtonContainer>
                 <Button name="submit">{t("Submit")}</Button>
               </ButtonContainer>
