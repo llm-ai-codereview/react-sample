@@ -51,6 +51,14 @@ const Home = () => {
         icon="waving.svg"
         id="product"
       />
+      <ContentBlock
+        direction="right"
+        title={AboutContent.title}
+        content={AboutContent.text}
+        section={AboutContent.section}
+        icon="graphs.svg"
+        id="blog"
+      />
       <Contact
         title={ContactContent.title}
         content={ContactContent.text}
