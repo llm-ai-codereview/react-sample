@@ -11,6 +11,9 @@ export default function validate(values: validateProps) {
   } else if (!/\S+@\S+\.\S+/.test(values.email)) {
     errors.email = "Email address is invalid";
   }
+  if (!values.phoneNumber) {
+    errors.message = "Phone Number is required";
+  }
   if (!values.message) {
     errors.message = "Message is required";
   }
