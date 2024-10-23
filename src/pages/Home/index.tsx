@@ -64,6 +64,11 @@ const Home = () => {
         content={ContactContent.text}
         id="contact"
       />
+      <Contact
+        title={ContactContent.title}
+        content={ContactContent.text}
+        id="contact"
+      />
     </Container>
   );
 };
